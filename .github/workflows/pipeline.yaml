@@ -16,3 +16,12 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  job-deux: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "Run bullshit commands"
+        run: | 
+          ls / 
+          ls -lrat / 
+          echo "test" > patate.txt
